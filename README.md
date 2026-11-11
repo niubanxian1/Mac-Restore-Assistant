@@ -1,29 +1,49 @@
 # Mac Restore Assistant
 
-**一款面向 MacBook 维修工程师的免费开源工具。**
+**A free and open-source utility for MacBook repair professionals.**
 
-Mac Restore Assistant 致力于为 MacBook 维修工程师提供方便、可靠的 DFU、Revive、Restore 和设备管理体验。
+Mac Restore Assistant is designed to make DFU mode, Revive, Restore, and device management workflows more accessible, reliable, and convenient for MacBook repair professionals.
 
-### 开源理念
+## Open-Source Philosophy
 
-> **我希望这个工具不仅仅属于我一个人，而是能够通过大家的使用、研究和改进，逐渐变得更加完善。**
+> **This project should not belong to a single person. It should grow through shared use, research, and continued improvement by the community.**
 
-欢迎所有人自由使用、复制、修改、研究和重新分发本项目，包括基于本项目进行二次开发。
+Everyone is welcome to use, copy, modify, study, and redistribute this project, including using it as the basis for their own work.
 
-如果你修复了 Bug、优化了设备兼容性，或者开发了更强大的功能，非常欢迎通过 GitHub Pull Request 将改进分享回来。
+If you fix a bug, improve device compatibility, or develop a useful new feature, contributions via GitHub Pull Requests are always welcome.
 
-**不强制要求回馈，但真诚欢迎任何有价值的贡献。**
+**Contributing back is never required, but any valuable contribution is sincerely appreciated.**
 
-希望大家一起让 MacBook 维修工具变得更好用、更稳定。
+Together, we can make MacBook repair tools more capable, stable, and accessible.
 
-### 开源协议
+## Acknowledgements
 
-本项目采用 MIT License。
+Mac Restore Assistant is independently maintained, but its design and implementation have benefited greatly from the ideas, research, documentation, and tooling shared by the Mac repair and DFU community. I am sincerely grateful to the authors, contributors, and maintainers of the following projects and resources. Their willingness to share their work has made projects like this possible.
 
-允许自由使用、修改、分发和商业使用，但须遵守许可证中的版权及许可声明保留要求。
+### Open-Source Projects
 
-### 项目状态
+- [XRSec/DFU-Tools](https://github.com/XRSec/DFU-Tools)
+- [AsahiLinux/macvdmtool](https://github.com/AsahiLinux/macvdmtool)
+- [kylejericson/DFU_Tool](https://github.com/kylejericson/DFU_Tool)
+- [waynebonc/Popeyes](https://github.com/waynebonc/Popeyes)
+- [fcjr/restorekit](https://github.com/fcjr/restorekit)
 
-项目正在进行公开发行准备。
+### DFU Blaster by TwoCanoes
 
-当前仓库用于展示项目介绍和开源信息。完整源码将在完成发行检查后另行上传。
+- [Product page](https://twocanoes.com/products/mac/dfu-blaster/)
+- [Development history](https://twocanoes.com/products/mac/dfu-blaster/history/)
+- [Public downloads](https://bitbucket.org/twocanoes/dfu-blaster-public/downloads/)
+
+Thank you for openly sharing your knowledge, tools, and experience with the community.
+
+## License
+
+This project is licensed under the MIT License.
+
+You are free to use, modify, distribute, and commercially use the project, provided that the copyright and permission notices required by the license are retained.
+
+## Project Status
+
+The project is currently being prepared for public release.
+
+This repository currently provides the project introduction and open-source information. The complete source code will be uploaded separately after the release checks are complete.
