@@ -1,49 +1,56 @@
 # Mac Restore Assistant
 
-**A free and open-source utility for MacBook repair professionals.**
+**A free tool for Mac repair technicians.** Select a physical host port to request DFU, restart, or Recovery (startup options), and capture logs while Apple Configurator performs a revive or restore.
 
-Mac Restore Assistant is designed to make DFU mode, Revive, Restore, and device management workflows more accessible, reliable, and convenient for MacBook repair professionals.
+## Download 1.0 RC
 
-## Open-Source Philosophy
+**[Download the 1.0 RC app](https://github.com/niubanxian1/Mac-Restore-Assistant/releases/tag/v1.0-rc1410)** · Apple silicon host · macOS 26 or later
 
-> **This project should not belong to a single person. It should grow through shared use, research, and continued improvement by the community.**
+This is a release candidate for real-device evaluation. DFU and Recovery workflows have been tried on individual devices, but the 1410 package and all hardware combinations have not been fully validated. The app uses an Apple Development signature; notarization and installation on a different Mac have not been verified. Some localized messages and layouts may still need work; in particular, the DFU double-send status can remain in Chinese when another language is selected.
 
-Everyone is welcome to use, copy, modify, study, and redistribute this project, including using it as the basis for their own work.
+SHA-256 of the app ZIP: `34852ab8fd7539bc341cfea6863a323d459420320480a46a874857ddc5285f37`
 
-If you fix a bug, improve device compatibility, or develop a useful new feature, contributions via GitHub Pull Requests are always welcome.
+## Quick start
 
-**Contributing back is never required, but any valuable contribution is sincerely appreciated.**
+1. Connect the target Mac to the appropriate USB-C port on the host. Install or check the Helper from **Settings → Helper / Environment**; initial setup requires administrator authorization.
+2. Select the host's physical port, check its calibration and use **Enter DFU**, **Restart Device**, or **Recovery**. A request receipt is not proof that the target reached the requested mode.
+3. For firmware restore, use **Apple Configurator**. To capture a diagnostic log, select **Start Capture** before the operation, stop capture afterward, and export the ZIP. Logs can contain device identifiers and other sensitive information; review before sharing.
+4. **Settings → Apple Configurator** chooses whether the home button only reopens Configurator or cleans existing caches and restarts it. The default keeps Application Support data.
 
-Together, we can make MacBook repair tools more capable, stable, and accessible.
+## Interface
 
-## Acknowledgements
+Representative English screenshots from the preceding UI candidate; the RC build number and feedback wording may differ.
 
-Mac Restore Assistant is independently maintained, but its design and implementation have benefited greatly from the ideas, research, documentation, and tooling shared by the Mac repair and DFU community. I am sincerely grateful to the authors, contributors, and maintainers of the following projects and resources. Their willingness to share their work has made projects like this possible.
+![Main window](docs/screenshots/main-en.png)
+![Port calibration](docs/screenshots/ports-en.png)
+![Configurator settings](docs/screenshots/configurator-en.png)
 
-### Open-Source Projects
+## Build from source
 
-- [XRSec/DFU-Tools](https://github.com/XRSec/DFU-Tools)
-- [AsahiLinux/macvdmtool](https://github.com/AsahiLinux/macvdmtool)
-- [kylejericson/DFU_Tool](https://github.com/kylejericson/DFU_Tool)
-- [waynebonc/Popeyes](https://github.com/waynebonc/Popeyes)
-- [fcjr/restorekit](https://github.com/fcjr/restorekit)
+The application is in `app/`; the user's independently developed RestoreLogEngine dependency is included separately under `vendor/RestoreLogMonitor/`. Swift 6 and an Xcode SDK that supports macOS 26 are required.
 
-### DFU Blaster by TwoCanoes
+```sh
+cd app
+swift build -c release
+cd ..
+SIGN_IDENTITY="Apple Development: Your Name (TEAMID)" ./scripts/build-rc.sh
+```
 
-- [Product page](https://twocanoes.com/products/mac/dfu-blaster/)
-- [Development history](https://twocanoes.com/products/mac/dfu-blaster/history/)
-- [Public downloads](https://bitbucket.org/twocanoes/dfu-blaster-public/downloads/)
+The build script refuses to overwrite an existing app. With no `SIGN_IDENTITY`, it creates an ad-hoc signed development build. **The bundled Helper accepts the configured app identifier and Team ID only**; an ad-hoc build or a different developer account cannot be assumed to control devices with that Helper. Its installation script also checks fixed Helper and backend hashes. A release for another signing identity requires appropriate Helper configuration, signing, packaging and real-device testing.
 
-Thank you for openly sharing your knowledge, tools, and experience with the community.
+The checked-in pre-signed Helper/backend match RC 1410; rebuilding them changes their hashes and requires a corresponding, reviewed installer update. Two installer fixture tests in the original development environment used an older sealed Helper and failed its hash check; the final RC app passed a dry-run preflight. The source includes anonymized example identifiers in test/preview data.
+
+## Acknowledgments
+
+Thank you to the authors and maintainers whose work informed this project:
+
+- [XRSec / DFU-Tools](https://github.com/XRSec/DFU-Tools)
+- [Asahi Linux / macvdmtool](https://github.com/AsahiLinux/macvdmtool)
+- [kylejericson / DFU_Tool](https://github.com/kylejericson/DFU_Tool)
+- [waynebonc / Popeyes](https://github.com/waynebonc/Popeyes)
+- [fcjr / restorekit](https://github.com/fcjr/restorekit)
+- [Twocanoes / DFU Blaster Pro](https://twocanoes.com/products/mac/dfu-blaster/) · [version history](https://twocanoes.com/products/mac/dfu-blaster/history/) · [public downloads](https://bitbucket.org/twocanoes/dfu-blaster-public/downloads/)
 
 ## License
 
-This project is licensed under the MIT License.
-
-You are free to use, modify, distribute, and commercially use the project, provided that the copyright and permission notices required by the license are retained.
-
-## Project Status
-
-The project is currently being prepared for public release.
-
-This repository currently provides the project introduction and open-source information. The complete source code will be uploaded separately after the release checks are complete.
+The project is available under the [MIT License](LICENSE). The derived direct RID backend includes Apache-2.0 components and their [license and notices](app/Sources/direct_rid_dfu/LICENSE); retain applicable third-party notices.

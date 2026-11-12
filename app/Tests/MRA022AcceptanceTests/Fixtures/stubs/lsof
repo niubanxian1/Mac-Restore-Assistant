@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ "${LSOF_MODE:-}" = "listening" ]; then
+  echo "COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME"
+  echo "helper  4242 root 3u unix 0 0 0 ${1:-socket}"
+  exit 0
+fi
+exit 1

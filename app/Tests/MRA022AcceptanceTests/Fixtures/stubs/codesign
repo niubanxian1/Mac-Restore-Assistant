@@ -1,0 +1,11 @@
+#!/bin/bash
+# Test stub: accept --verify for fixture/temp paths only.
+for arg in "$@"; do
+  case "$arg" in
+    /Library/*|/var/run/*)
+      echo "stub-codesign: refusing system path $arg" >&2
+      exit 99
+      ;;
+  esac
+done
+exit 0

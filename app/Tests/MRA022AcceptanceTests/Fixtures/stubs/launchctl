@@ -1,0 +1,29 @@
+#!/bin/bash
+mode="${LAUNCHCTL_MODE:-absent}"
+cmd="${1:-}"
+case "$cmd" in
+  print)
+    if [ "$mode" = "present" ]; then
+      echo "state = running"
+      echo "pid = 99999"
+      echo "program = /Library/PrivilegedHelperTools/com.mra.devicecontrol.helper"
+      exit 0
+    fi
+    echo "Could not find service" >&2
+    exit 1
+    ;;
+  bootout|bootstrap)
+    echo "STUB_LAUNCHCTL $*"
+    if [ "$mode" = "present" ] && [ "$cmd" = "bootout" ]; then
+      # stay present unless LAUNCHCTL_BOOTOUT_STOPS=1
+      if [ "${LAUNCHCTL_BOOTOUT_STOPS:-0}" = "1" ]; then
+        exit 0
+      fi
+    fi
+    exit 0
+    ;;
+  *)
+    echo "STUB_LAUNCHCTL $*"
+    exit 0
+    ;;
+esac
