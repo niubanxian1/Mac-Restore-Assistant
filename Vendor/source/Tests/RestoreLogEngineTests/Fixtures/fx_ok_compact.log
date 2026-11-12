@@ -1,0 +1,13 @@
+filter: process CONTAINS[c] "configurator"
+2026-11-06 10:00:01.000 DeviceService (MobileDevice): <Restore Device 1>: operation 4 progress -1
+2026-11-06 10:00:02.000 DeviceService (MobileDevice): <Restore Device 1>: operation 5 progress -1
+2026-11-06 10:00:03.000 CFPrefs: found no value for key <private>
+2026-11-06 10:00:04.000 found no value for key bar
+2026-11-06 10:00:05.000 [com.apple.xpc.transaction:all] fetchOperationProgressForOperationID release
+2026-11-06 10:00:06.000 boardConfig: J513AP
+2026-11-06 10:00:07.000 sending file: Restore.ipsw
+2026-11-06 10:00:08.000 ACURestoreFirmwareOperation begin
+2026-11-06 10:05:00.000 Restore succeeded
+2026-11-06 10:05:01.000 restore was successful
+2026-11-06 10:05:02.000 Restore complete
+2026-11-06 10:05:03.000 State Machine Dump, status:SUCCESS

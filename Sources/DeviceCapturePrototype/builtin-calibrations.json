@@ -1,0 +1,404 @@
+{
+ "generatedFrom": "/Users/niubanxiandetuzhichakanqi/Desktop/Mac 模型接口 校准数据",
+ "hosts": {
+  "Mac14,2": {
+   "displayName": "MacBook Air M2 A2681 13寸",
+   "sourceFile": "MacBook Air M2 A2681 13寸.zip",
+   "slots": [
+    {
+     "slot": "S1",
+     "face": "LEFT",
+     "portNumber": 1,
+     "rid": 0,
+     "binding": "Mac14,2|AppleHPMDevice|1|0"
+    },
+    {
+     "slot": "S2",
+     "face": "LEFT",
+     "portNumber": 2,
+     "rid": 1,
+     "binding": "Mac14,2|AppleHPMDevice|2|1"
+    }
+   ],
+   "partial": false,
+   "skippedSlots": [],
+   "generatedAt": "2026-10-22T10:17:43+00:00"
+  },
+  "Mac15,13": {
+   "displayName": "MacBook Air M3 A3114 15寸",
+   "sourceFile": "MacBook Air M3 A3114 15寸.zip",
+   "slots": [
+    {
+     "slot": "S1",
+     "face": "LEFT",
+     "portNumber": 1,
+     "rid": 0,
+     "binding": "Mac15,13|AppleHPMDeviceHALType3|1|0"
+    },
+    {
+     "slot": "S2",
+     "face": "LEFT",
+     "portNumber": 2,
+     "rid": 1,
+     "binding": "Mac15,13|AppleHPMDeviceHALType3|2|1"
+    }
+   ],
+   "partial": false,
+   "skippedSlots": [],
+   "generatedAt": "2026-10-22T10:27:18+00:00"
+  },
+  "Mac16,8": {
+   "displayName": "M4 Pro MacBook Pro 14寸 A3401",
+   "sourceFile": "M4 pro 14寸A3401.zip",
+   "slots": [
+    {
+     "slot": "L1",
+     "face": "LEFT",
+     "portNumber": 1,
+     "rid": 0,
+     "binding": "Mac16,8|AppleHPMDeviceHALType3|1|0"
+    },
+    {
+     "slot": "L2",
+     "face": "LEFT",
+     "portNumber": 2,
+     "rid": 1,
+     "binding": "Mac16,8|AppleHPMDeviceHALType3|2|1"
+    },
+    {
+     "slot": "R1",
+     "face": "RIGHT",
+     "portNumber": 3,
+     "rid": 2,
+     "binding": "Mac16,8|AppleHPMDeviceHALType3|3|2"
+    }
+   ],
+   "partial": false,
+   "skippedSlots": [],
+   "generatedAt": "2026-11-12T08:46:42+00:00"
+  },
+  "Mac16,10": {
+   "displayName": "Mac mini M4",
+   "sourceFile": "Mac mini M4校准数据.zip",
+   "slots": [
+    {
+     "slot": "F1",
+     "face": "FRONT",
+     "portNumber": null,
+     "rid": null,
+     "binding": "usb_native:v1:Mac16,10|ioport:IOPort|5|2|USB-C"
+    },
+    {
+     "slot": "F2",
+     "face": "FRONT",
+     "portNumber": null,
+     "rid": null,
+     "binding": "usb_native:v1:Mac16,10|ioport:IOPort|6|2|USB-C"
+    },
+    {
+     "slot": "R1",
+     "face": "REAR",
+     "portNumber": 4,
+     "rid": 3,
+     "binding": "Mac16,10|AppleHPMDeviceHALType3|4|3"
+    },
+    {
+     "slot": "R2",
+     "face": "REAR",
+     "portNumber": 1,
+     "rid": 0,
+     "binding": "Mac16,10|AppleHPMDeviceHALType3|1|0"
+    },
+    {
+     "slot": "R3",
+     "face": "REAR",
+     "portNumber": 2,
+     "rid": 1,
+     "binding": "Mac16,10|AppleHPMDeviceHALType3|2|1"
+    }
+   ],
+   "partial": true,
+   "skippedSlots": [
+    "R3"
+   ],
+   "generatedAt": "2026-10-23T02:08:47+00:00"
+  },
+  "Mac16,12": {
+   "displayName": "M4 MacBook Air 13寸 A3240",
+   "sourceFile": "M4 MacBook Air 13寸 A3240.zip",
+   "slots": [
+    {
+     "slot": "S1",
+     "face": "LEFT",
+     "portNumber": 2,
+     "rid": 1,
+     "binding": "Mac16,12|AppleHPMDeviceHALType3|2|1"
+    },
+    {
+     "slot": "S2",
+     "face": "LEFT",
+     "portNumber": 1,
+     "rid": 0,
+     "binding": "Mac16,12|AppleHPMDeviceHALType3|1|0"
+    }
+   ],
+   "partial": false,
+   "skippedSlots": [],
+   "generatedAt": "2026-10-23T04:05:22+00:00"
+  },
+  "Mac17,3": {
+   "displayName": "MacBook Air M5",
+   "sourceFile": "MacBook Air M5.zip",
+   "slots": [
+    {
+     "slot": "S1",
+     "face": "LEFT",
+     "portNumber": 2,
+     "rid": 1,
+     "binding": "Mac17,3|AppleHPMDeviceHALType3|2|1"
+    },
+    {
+     "slot": "S2",
+     "face": "LEFT",
+     "portNumber": 1,
+     "rid": 0,
+     "binding": "Mac17,3|AppleHPMDeviceHALType3|1|0"
+    }
+   ],
+   "partial": false,
+   "skippedSlots": [],
+   "generatedAt": "2026-10-23T10:14:08+00:00"
+  },
+  "Mac18,5": {
+   "displayName": "Mac mini M6",
+   "sourceFile": "Mac mini M6模型校准数据.zip",
+   "slots": [
+    {
+     "slot": "F1",
+     "face": "FRONT",
+     "portNumber": null,
+     "rid": null,
+     "binding": "usb_native:v1:Mac18,5|ioport:IOPort|5|2|USB-C"
+    },
+    {
+     "slot": "F2",
+     "face": "FRONT",
+     "portNumber": null,
+     "rid": null,
+     "binding": "usb_native:v1:Mac18,5|ioport:IOPort|6|2|USB-C"
+    },
+    {
+     "slot": "R1",
+     "face": "REAR",
+     "portNumber": 4,
+     "rid": 3,
+     "binding": "Mac18,5|AppleHPMDeviceHALType3|4|3"
+    },
+    {
+     "slot": "R2",
+     "face": "REAR",
+     "portNumber": 1,
+     "rid": 0,
+     "binding": "Mac18,5|AppleHPMDeviceHALType3|1|0"
+    },
+    {
+     "slot": "R3",
+     "face": "REAR",
+     "portNumber": 2,
+     "rid": 1,
+     "binding": "Mac18,5|AppleHPMDeviceHALType3|2|1"
+    }
+   ],
+   "partial": false,
+   "skippedSlots": [],
+   "generatedAt": "2026-10-23T02:36:20+00:00"
+  },
+  "MacBookAir10,1": {
+   "displayName": "M1 MacBook Air A2337",
+   "sourceFile": "M1 MacBook Air A2337.zip",
+   "slots": [
+    {
+     "slot": "S1",
+     "face": "LEFT",
+     "portNumber": 1,
+     "rid": 0,
+     "binding": "MacBookAir10,1|AppleHPMDevice|1|0"
+    },
+    {
+     "slot": "S2",
+     "face": "LEFT",
+     "portNumber": 2,
+     "rid": 1,
+     "binding": "MacBookAir10,1|AppleHPMDevice|2|1"
+    }
+   ],
+   "partial": false,
+   "skippedSlots": [],
+   "generatedAt": "2026-10-23T06:14:38+00:00"
+  },
+  "MacBookPro17,1": {
+   "displayName": "MacBook Pro M1 A2338",
+   "sourceFile": "MacBook Pro M1 A2338.zip",
+   "slots": [
+    {
+     "slot": "S1",
+     "face": "LEFT",
+     "portNumber": 1,
+     "rid": 0,
+     "binding": "MacBookPro17,1|AppleHPMDevice|1|0"
+    },
+    {
+     "slot": "S2",
+     "face": "LEFT",
+     "portNumber": 2,
+     "rid": 1,
+     "binding": "MacBookPro17,1|AppleHPMDevice|2|1"
+    }
+   ],
+   "partial": false,
+   "skippedSlots": [],
+   "generatedAt": "2026-10-23T06:10:24+00:00"
+  },
+  "MacBookPro18,2": {
+   "displayName": "M1 Pro MacBook Pro A2485 16英寸",
+   "sourceFile": "M1 Pro MacBook Pro A2485 16英寸.zip",
+   "slots": [
+    {
+     "slot": "S3",
+     "face": "LEFT",
+     "portNumber": 1,
+     "rid": 0,
+     "binding": "MacBookPro18,2|AppleHPMDevice|1|0",
+     "physicalName": "左侧上方"
+    },
+    {
+     "slot": "S4",
+     "face": "LEFT",
+     "portNumber": 2,
+     "rid": 1,
+     "binding": "MacBookPro18,2|AppleHPMDevice|2|1",
+     "physicalName": "左侧下方"
+    },
+    {
+     "slot": "S5",
+     "face": "RIGHT",
+     "portNumber": 3,
+     "rid": 2,
+     "binding": "MacBookPro18,2|AppleHPMDevice|3|2",
+     "physicalName": "右侧"
+    }
+   ],
+   "partial": true,
+   "skippedSlots": [
+    "S2"
+   ],
+   "generatedAt": "2026-10-23T09:46:23+00:00"
+  },
+  "MacBookPro18,3": {
+   "displayName": "M1Pro MacBook Pro A2442 14英寸",
+   "sourceFile": "M1Pro MacBook Pro A2442 14英寸.zip",
+   "slots": [
+    {
+     "slot": "S1",
+     "face": "LEFT",
+     "portNumber": 1,
+     "rid": 0,
+     "binding": "MacBookPro18,3|AppleHPMDevice|1|0"
+    },
+    {
+     "slot": "S2",
+     "face": "LEFT",
+     "portNumber": 2,
+     "rid": 1,
+     "binding": "MacBookPro18,3|AppleHPMDevice|2|1"
+    },
+    {
+     "slot": "S3",
+     "face": "RIGHT",
+     "portNumber": 3,
+     "rid": 2,
+     "binding": "MacBookPro18,3|AppleHPMDevice|3|2"
+    }
+   ],
+   "partial": false,
+   "skippedSlots": [],
+   "generatedAt": "2026-10-23T08:23:16+00:00"
+  }
+ },
+ "sharedCandidates": [
+  {
+   "models": [
+    "Mac14,2",
+    "Mac14,15",
+    "Mac15,12",
+    "Mac15,13",
+    "Mac16,12",
+    "Mac16,13",
+    "Mac17,3",
+    "Mac17,4"
+   ],
+   "basis": "OWNER CONFIRMED: MacBook Air M2 through M5 share the same built-in interface layout",
+   "confirmed": true
+  },
+  {
+   "models": [
+    "MacBookPro18,2",
+    "MacBookPro18,1",
+    "Mac14,6",
+    "Mac14,10",
+    "Mac15,7",
+    "Mac15,9",
+    "Mac15,11",
+    "Mac16,5",
+    "Mac16,7",
+    "Mac17,6",
+    "Mac17,8",
+    "Mac17,10",
+    "Mac17,12"
+   ],
+   "basis": "OWNER CONFIRMED: 16-inch MacBook Pro M1 Pro through M5 Max share the same built-in interface layout",
+   "confirmed": true
+  },
+  {
+   "models": [
+    "Mac16,8",
+    "MacBookPro18,3",
+    "MacBookPro18,4",
+    "Mac14,5",
+    "Mac14,9",
+    "Mac15,6",
+    "Mac15,8",
+    "Mac15,10",
+    "Mac16,6",
+    "Mac16,1",
+    "Mac17,2",
+    "Mac17,7",
+    "Mac17,9",
+    "Mac17,11",
+    "Mac17,13",
+    "Mac18,1"
+   ],
+   "basis": "OWNER CONFIRMED: M4 base through M6 base/Pro reuse the M4 Pro A3401 three-port layout; 14-inch M1 Pro through M5 Max use the same three-port geometry. M6 identifiers are added when observed",
+   "confirmed": true
+  },
+  {
+   "models": [
+    "Mac15,3"
+   ],
+   "basis": "OWNER CONFIRMED: base M3 14-inch MacBook Pro uses only the two left-side ports and must not reuse the three-port M4-M6 family; no verified two-port sample is currently in the library",
+   "confirmed": true
+  },
+  {
+   "models": [
+    "Mac16,10",
+    "Mac18,5"
+   ],
+   "basis": "BOTH REPORTS: F1/F2 + R1/R2/R3 same port/RID pattern; not auto-expanded without explicit alias"
+  }
+ ],
+ "notes": [
+  "exact host-model entries only; no name-based auto expansion",
+  "archived controller IDs are not stored; runtime HPM controller+port+RID must match",
+  "MacBookPro18,2 physicalName seeded from existing custom labels (left1 RID0, left2 RID1, right1 RID2); slot IDs retained as details"
+ ]
+}

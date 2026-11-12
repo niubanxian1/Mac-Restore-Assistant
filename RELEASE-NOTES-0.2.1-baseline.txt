@@ -1,0 +1,28 @@
+MRA Device Control Prototype 0.2.1
+Build 20261110.1750
+Release directory: /Users/Shared/MRA_DEVICE_CONTROL_RELEASE_0.2.1_20261110T1750
+
+Source changes:
+- default right1: location 02100000 / RID 2
+- PortAssociationResolver: location + RID + controller/PortNumber
+- observedPortKey uses resolver
+- regression tests for S5 vs S3 mapping
+
+Unchanged:
+- Helper binary
+- direct backend binary
+- LaunchDaemon plist
+- signing identity/team
+- Gatekeeper/AMFI/spctl/security settings
+- reboot behavior
+
+Acceptance definitions:
+- DFU success: actual Apple Mobile Device (DFU Mode) with the same ECID.
+- Reboot success: backend exit=0, DFU disappears, and target screen shows lock/login/normal OS. Ordinary USB enumeration is not required; Pro may prohibit data connections in normal mode.
+
+Hardware status:
+- S4 DFU PASS (same ECID actual DFU)
+- S4 reboot PASS (normal USB / actual normal mode)
+- S5 double DFU PASS (same ECID actual DFU)
+- S5 reboot PASS by manual locked-screen observation
+- no more device tests; Helper not reinstalled

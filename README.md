@@ -44,6 +44,28 @@ You are free to use, modify, distribute, and commercially use the project, provi
 
 ## Project Status
 
-The project is currently being prepared for public release.
+Mac Restore Assistant 1.0 RC source is available on `main`.
 
-This repository currently provides the project introduction and open-source information. The complete source code will be uploaded separately after the release checks are complete.
+The current RC focuses on per-port Mac repair workflows, privileged Helper
+management, passive device observation, calibrated port layouts, and
+five-language UI support. Macs require macOS 26 or later.
+
+The published app is an Apple Development build and is not notarized. macOS
+therefore requires first-launch approval in System Settings.
+
+## Build from source
+
+Requirements:
+
+- macOS 26 or later
+- Xcode 26 or later with the Swift 6 toolchain
+
+Run:
+
+```bash
+swift test
+swift build -c release
+```
+
+The `RestoreLogEngine` dependency is vendored under `Vendor/source`, so a clean
+clone does not depend on files outside this repository.

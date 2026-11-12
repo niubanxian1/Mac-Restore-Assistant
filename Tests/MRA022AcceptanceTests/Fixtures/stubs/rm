@@ -1,0 +1,16 @@
+#!/bin/bash
+log="${RM_LOG:-/dev/null}"
+for arg in "$@"; do
+  case "$arg" in
+    -*) continue ;;
+    /Library/*|/var/run/*)
+      echo "REFUSED_SYSTEM_RM $arg" | tee -a "$log" >&2
+      exit 99
+      ;;
+    *)
+      echo "RM $arg" >> "$log"
+      ;;
+  esac
+done
+# Delegate to real rm for temp paths only after logging.
+exec /bin/rm "$@"

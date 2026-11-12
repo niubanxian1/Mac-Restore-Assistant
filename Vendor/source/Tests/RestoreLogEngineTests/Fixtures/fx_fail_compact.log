@@ -1,0 +1,16 @@
+filter: process CONTAINS[c] "configurator"
+2026-11-06 14:54:01.123 DeviceService (MobileDevice): <Recovery Mode Device 1>: operation 4 progress -1
+2026-11-06 14:54:02.000 CFPrefs: found no value for key <private>
+2026-11-06 14:54:02.001 [com.apple.defaults:User Defaults] found no value for key foo
+2026-11-06 14:54:02.002 [com.apple.iconservices:cache] icon miss
+2026-11-06 14:54:02.003 AppleMediaServices chatter
+2026-11-06 14:54:02.004 [com.apple.xpc.transaction:all] fetchOperationProgressForOperationID release
+2026-11-06 14:54:02.005 [com.apple.launchservices:db] register
+2026-11-06 14:54:02.006 [com.apple.AppKit:window] sheet present
+2026-11-06 14:54:02.007 Found minimum MobileDeviceVersion: 1
+2026-11-06 14:54:37.888 previous restore failed with exit status 0x100
+2026-11-06 14:56:59.282 CFError domain:AMRestoreErrorDomain code:-1 description:ramrod firmware update failed
+2026-11-06 14:56:59.283 RamrodErrorDomain code:7 description:update_madea: /usr/bin/update_mcdp29xx returned 1
+2026-11-06 14:57:05.653 <Restore Device …>: Restore failed (result = -1)
+2026-11-06 14:57:05.654 Finished RestoreOS Restore Phase: Failed
+2026-11-06 14:57:05.655 State Machine Dump, status:ERROR
