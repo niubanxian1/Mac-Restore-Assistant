@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ "${PS_MODE:-}" = "running" ] && [ -n "${HELPER_DST:-}" ]; then
+  printf '  4242 %s\n' "$HELPER_DST"
+  exit 0
+fi
+# no matching process
+exit 0

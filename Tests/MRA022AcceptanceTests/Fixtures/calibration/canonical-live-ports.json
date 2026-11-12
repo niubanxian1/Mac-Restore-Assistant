@@ -1,0 +1,65 @@
+{
+  "hostModel": "MacBookPro18,2",
+  "displayName": "M1 Pro MacBook Pro A2485 16英寸",
+  "builtinSlots": [
+    {
+      "slot": "S3",
+      "face": "LEFT",
+      "portNumber": 1,
+      "rid": 0,
+      "physicalName": "左侧上方"
+    },
+    {
+      "slot": "S4",
+      "face": "LEFT",
+      "portNumber": 2,
+      "rid": 1,
+      "physicalName": "左侧下方"
+    },
+    {
+      "slot": "S5",
+      "face": "RIGHT",
+      "portNumber": 3,
+      "rid": 2,
+      "physicalName": "右侧"
+    }
+  ],
+  "canonicalLivePorts": [
+    {
+      "controller": "100000834",
+      "portNumber": 1,
+      "rid": 0,
+      "id": "100000834:1",
+      "slot": "S3"
+    },
+    {
+      "controller": "100000813",
+      "portNumber": 2,
+      "rid": 1,
+      "id": "100000813:2",
+      "slot": "S4"
+    },
+    {
+      "controller": "10000081e",
+      "portNumber": 3,
+      "rid": 2,
+      "id": "10000081e:3",
+      "slot": "S5"
+    }
+  ],
+  "sameRIDTwoControllers": [
+    {
+      "controller": "100000aaa",
+      "portNumber": 1,
+      "rid": 0,
+      "id": "100000aaa:1"
+    },
+    {
+      "controller": "100000bbb",
+      "portNumber": 3,
+      "rid": 0,
+      "id": "100000bbb:3"
+    }
+  ],
+  "note": "IDs are synthetic/canonical for tests (S3/S4/S5 values match existing PortAssociationRegressionTests and audit t437). Not a live ioreg dump."
+}

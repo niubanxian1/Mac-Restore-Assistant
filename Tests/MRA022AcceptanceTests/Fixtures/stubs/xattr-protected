@@ -1,0 +1,21 @@
+#!/bin/bash
+set -u
+
+REAL="${REAL_XATTR_BIN:-/usr/bin/xattr}"
+PROTECTED_PREFIX="${XATTR_PROTECTED_PREFIX:-}"
+
+if [ "${1:-}" = "-p" ]; then
+  exec "$REAL" "$@"
+fi
+
+if [ "${1:-}" = "-dr" ]; then
+  target="${3:-}"
+  case "$target" in
+    "$PROTECTED_PREFIX"*)
+      echo "xattr: [Errno 1] Operation not permitted: '$target'" >&2
+      exit 1
+      ;;
+  esac
+fi
+
+exec "$REAL" "$@"

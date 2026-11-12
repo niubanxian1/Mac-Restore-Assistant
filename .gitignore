@@ -24,3 +24,9 @@ htmlcov/
 # Editors
 .vscode/
 .idea/
+
+# Swift Package Manager / Xcode
+.build/
+.build-*/
+.swiftpm/
+DerivedData/
