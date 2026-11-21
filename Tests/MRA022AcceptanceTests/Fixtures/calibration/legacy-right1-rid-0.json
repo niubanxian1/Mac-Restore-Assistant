@@ -1,0 +1,60 @@
+{
+  "models": [
+    {
+      "id": "0B9B7E69-37E3-4EC9-B2E9-D29DDFB514BF",
+      "layout": "LEFT_DUAL_DATA",
+      "model": "Mac14,2",
+      "physicalPort": "left2",
+      "rid": "1"
+    },
+    {
+      "id": "60C5DED2-B0DF-4C8A-B737-99A8AD567564",
+      "layout": "LEFT_DUAL_DATA",
+      "model": "Mac14,2",
+      "physicalPort": "left1",
+      "rid": "0"
+    },
+    {
+      "id": "6477A894-0A3E-405B-8654-539A28F732AB",
+      "layout": "LEFT_DUAL_DATA",
+      "model": "MacBookAir10,1",
+      "physicalPort": "left2",
+      "rid": "0"
+    },
+    {
+      "id": "48BBEBD6-79E8-44FA-BE94-E34D10FFA194",
+      "layout": "LEFT_DUAL_DATA",
+      "model": "MacBookAir10,1",
+      "physicalPort": "left1",
+      "rid": "1"
+    }
+  ],
+  "ports": [
+    {
+      "id": "52683B25-711F-4113-B93B-59C34C06C49E",
+      "label": "左侧下方",
+      "location": "01100000",
+      "physicalPort": "left2",
+      "rid": "1",
+      "side": "左侧"
+    },
+    {
+      "id": "6E71A84F-BD91-4DD1-9C70-64F8109FF9EE",
+      "label": "左侧上方",
+      "location": "01200000",
+      "physicalPort": "left1",
+      "rid": "0",
+      "side": "左侧"
+    },
+    {
+      "id": "4D2B76C0-58B4-4CED-9240-91882C598847",
+      "label": "右侧",
+      "location": "02100000",
+      "physicalPort": "right1",
+      "rid": "0",
+      "side": "右侧"
+    }
+  ],
+  "selectedPort": "10000081e:3",
+  "_fixtureNote": "Recreated under workers/D from the 20261110T1737 Shared backup (read-only). right1 location 02100000 has legacy rid 0. Do not treat this as a live Application Support file."
+}
